@@ -1,0 +1,8 @@
+# Ignore everything under build
+build/**
+
+# Allow directories so Git can traverse them
+!build/**/
+
+# Allow only .ino.bin files
+!build/**/*.ino.bin
