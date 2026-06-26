@@ -3,7 +3,7 @@
 #include <WiFi.h>
 #include <ESP32GithubOTA.h>
 
-#define CURRENT_VERSION 1
+#define CURRENT_VERSION 3
 
 const char *WIFI_SSID = "myssid";
 const char *WIFI_PASSWORD = "password";
@@ -65,7 +65,7 @@ void loop()
 {
     ota.handle();
     
-    if (millis() - lastBlink >= 1000)
+    if (millis() - lastBlink >= 100)
     {
         lastBlink = millis();
         ledState = !ledState;
