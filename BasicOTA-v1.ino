@@ -70,6 +70,5 @@ void loop()
         lastBlink = millis();
         ledState = !ledState;
         digitalWrite(LED_BUILTIN, ledState);
-        Serial.println("LED BLINk...");
     }
 }
